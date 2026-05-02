@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Solar System Planet Picker Keyframe Animation | by i.slar_y </title>
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel='stylesheet' href='https://unpkg.com/splitting@1.0.6/dist/splitting.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div id="app" data-current-planet="mercury">
+
+    <nav class="planet-nav">
+      <svg viewBox="0 20 400 400" xmlns="http://www.w3.org/2000/svg">
+
+        <!--       <defs> -->
+        <path id="navPath" d="M10,200 C30,-28 370,-28 390,200" fill="none" />
+        <!--       </defs> -->
+
+        <text>
+          <textPath href="#navPath" startOffset="0" font-size="10">
+            <tspan>Moon</tspan>
+            <tspan>Phobos</tspan>
+            <tspan>Deimos</tspan>
+            <tspan>Europa</tspan>
+            <tspan>Titan</tspan>
+            <tspan>Enceladus</tspan>
+            <tspan>Triton</tspan>
+            <tspan>Titania</tspan>
+          </textPath>
+        </text>
+
+      </svg>
+    </nav>
+
+    <div class="planet" data-planet="mercury" data-active>
+      <div class="planet-title">
+        <h1>Moon</h1>
+        <p class="planet-description">The Moon is Earth’s only natural satellite and the fifth-largest moon in the solar system. It has no atmosphere, so it cannot support life or weather. Its surface is covered with craters, mountains, and flat plains called maria, formed by ancient volcanic activity. The Moon causes tides on Earth due to its gravitational pull and helps stabilize Earth’s axial tilt, which keeps the climate relatively stable. It takes about 27.3 days to orbit Earth once.</p>
+      </div>
+
+      <div class="planet-details">
+        <div class="detail" data-detail="tilt" data-postfix="°">
+          5.15
+        </div>
+        <div class="detail" data-detail="gravity" data-postfix="">
+          1.62
+        </div>
+        <div class="detail" data-detail="hours">
+          655.2
+        </div>
+      </div>
+
+      <figure class="planet-figure">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg" width="700">
+      </figure>
+    </div>
+
+    <div class="planet" data-planet="venus">
+      <div class="planet-title">
+        <h1>Phobos</h1>
+        <p class="planet-description">Phobos is the larger and closer moon of Mars. It orbits very close to the planet and completes a full orbit in just about 7 hours, making it rise in the west and set in the east on Mars. Its surface is rough, dusty, and heavily cratered, with the large Stickney Crater being its most noticeable feature. Phobos is slowly moving closer to Mars and may eventually break apart due to gravitational forces.</p>
+      </div>
+
+      <div class="planet-details">
+        <div class="detail" data-detail="tilt" data-postfix="°">
+          1.08
+        </div>
+        <div class="detail" data-detail="gravity" data-postfix="">
+          0.05
+        </div>
+        <div class="detail" data-detail="hours">
+          7.65
+        </div>
+      </div>
+
+      <figure class="planet-figure">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Phobos_colour_2008.jpg" width="700">      </figure>
+    </div>
+
+    <div class="planet" data-planet="earth">
+      <div class="planet-title">
+        <h1>Demios</h1>
+        <p class="planet-description">Deimos is the smaller and outer moon of Mars. It has a smoother surface compared to Phobos because dust has filled many of its craters. It takes about 30 hours to orbit Mars. Scientists believe it may be a captured asteroid from the asteroid belt. Deimos is slowly drifting away from Mars over time and appears small and dim when seen from the Martian surface.</p>
+      </div>
+
+      <div class="planet-details">
+        <div class="detail" data-detail="tilt" data-postfix="°">
+          0.93
+        </div>
+        <div class="detail" data-detail="gravity" data-postfix="">
+          0.03
+        </div>
+        <div class="detail" data-detail="hours">
+          30
+        </div>
+      </div>
+
+      <figure class="planet-figure">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Deimos-MRO.jpg" width="700">
+     
+      </figure>
+    </div>
+
+    <div class="planet" data-planet="mars">
+      <div class="planet-title">
+        <h1>Europa</h1>
+        <p class="planet-description">Europa is one of Jupiter’s largest moons and is covered in a thick layer of ice. Beneath this ice, scientists believe there is a vast ocean of liquid water. This makes Europa one of the most promising places in the solar system for possible life. Its surface is smooth with cracks and streaks caused by shifting ice and Jupiter’s strong gravitational forces.</p>
+      </div>
+
+      <div class="planet-details">
+        <div class="detail" data-detail="tilt" data-postfix="°">
+          0.47
+        </div>
+        <div class="detail" data-detail="gravity" data-postfix="">
+          1.3
+        </div>
+        <div class="detail" data-detail="hours">
+          85
+        </div>
+      </div>
+
+      <figure class="planet-figure">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Europa-moon.jpg" width="700">
+      </figure>
+    </div>
+
+    <div class="planet" data-planet="jupiter">
+      <div class="planet-title">
+        <h1>Titan</h1>
+        <p class="planet-description">Titan is the largest moon of Saturn and the second-largest moon in the solar system. It is unique because it has a thick atmosphere, mostly nitrogen, with clouds and methane rain. Its surface has lakes and rivers of liquid methane and ethane. Titan is often compared to early Earth, but it is extremely cold, making it very different in conditions.</p>
+      </div>
+
+      <div class="planet-details">
+        <div class="detail" data-detail="tilt" data-postfix="°">
+          0.33
+        </div>
+        <div class="detail" data-detail="gravity" data-postfix="">
+          1.4
+        </div>
+        <div class="detail" data-detail="hours">
+          383
+        </div>
+      </div>
+
+      <figure class="planet-figure">
+        <img src="https://images-assets.nasa.gov/image/PIA20016/PIA20016~orig.jpg" width="700">
+      </figure>
+    </div>
+
+    <div class="planet" data-planet="saturn">
+      <div class="planet-title">
+        <h1>Enceladus</h1>
+        <p class="planet-description">Enceladus is a small icy moon of Saturn known for its dramatic ice and water vapor geysers. These geysers come from a hidden subsurface ocean beneath its icy crust. The presence of water, heat, and organic compounds makes it a strong candidate for potential microbial life. Its bright icy surface reflects most sunlight, making it very luminous.</p>
+      </div>
+
+      <div class="planet-details">
+        <div class="detail" data-detail="tilt" data-postfix="°">
+          0.02
+        </div>
+        <div class="detail" data-detail="gravity" data-postfix="">
+          0.113
+        </div>
+        <div class="detail" data-detail="hours">
+          33
+        </div>
+      </div>
+
+      <figure class="planet-figure">
+        <img src="https://images-assets.nasa.gov/image/PIA17202/PIA17202~orig.jpg" />
+      </figure>
+    </div>
+
+    <div class="planet" data-planet="uranus">
+      <div class="planet-title">
+        <h1>Titania</h1>
+        <p class="planet-description">Titania, the largest moon of Uranus, presents a very different picture. It is a rock–ice mixture body with a heavily cratered surface marked by long fault valleys and cliffs, indicating past tectonic activity rather than current geological change. Unlike Triton, Titania orbits in the same direction as its planet and likely formed from a disk around Uranus. It has no significant atmosphere and experiences extreme seasonal variations due to Uranus’s unusual axial tilt. While less geologically active today, Titania offers valuable clues about the internal evolution of mid-sized icy moons and the history of the Uranian system.</p>
+      </div>
+
+      <div class="planet-details">
+        <div class="detail" data-detail="tilt" data-postfix="°">
+          0.34
+        </div>
+        <div class="detail" data-detail="gravity" data-postfix="">
+          0.379
+        </div>
+        <div class="detail" data-detail="hours">
+          209
+        </div>
+      </div>
+
+      <figure class="planet-figure">
+        <img src="https://images-assets.nasa.gov/image/PIA00040/PIA00040~orig.jpg" width="1500"/>
+      </figure>
+    </div>
+
+
+    <div class="planet" data-planet="neptune">
+      <div class="planet-title">
+        <h1>Triton</h1>
+        <p class="planet-description">Triton is the largest moon of Neptune and stands out as one of the most unusual satellites in the Solar System. It follows a retrograde orbit, meaning it moves in the opposite direction of Neptune’s rotation—strong evidence that it was likely captured from the Kuiper Belt rather than forming alongside the planet. Triton has a thin nitrogen atmosphere, extremely low surface temperatures. It is scientifically important for understanding icy worlds and potential subsurface processes.</p>
+      </div>
+
+      <div class="planet-details">
+        <div class="detail" data-detail="tilt" data-postfix="°">
+          156.9 </div>
+        <div class="detail" data-detail="gravity" data-postfix="">
+          0.779 </div>
+        <div class="detail" data-detail="hours">
+          141
+        </div>
+      </div>
+
+      <figure class="planet-figure">
+        <img src="https://images-assets.nasa.gov/image/PIA00317/PIA00317~orig.jpg" width="700"/>
+      </figure>
+    </div>
+  </div>
+  <script src='https://unpkg.com/splitting@1.0.6/dist/splitting.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+<div id="wm">by Aditya Islary</div>
+
+<style>
+#wm {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: white;
+  opacity: 0.35;
+
+  pointer-events: none; /* 🔑 no interference */
+  user-select: none;
+
+  z-index: 9999;
+}
+</style>
+</html>
